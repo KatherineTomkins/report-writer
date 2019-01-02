@@ -11,9 +11,10 @@ public class Counter {
         for (final String item : splitStudents) {
             final String[] t = item.split(":");
             final String tOne = t[1].replace("Y", "1").replace("N", "0");
-            final Integer num = Integer.valueOf(tOne);
+            final Integer num = String.valueOf(tOne).chars().map(Character::getNumericValue).sum();
             transforms.put(t[0], num);
         }
         return transforms;
     }
+
 }
