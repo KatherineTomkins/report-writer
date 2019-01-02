@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class Counter {
 
-    public Map<String, Integer> Count(final List<String> splitStudents) {
+    public Map<String, Integer> count(final List<String> splitStudents) {
         final Map<String, Integer> transforms = new HashMap<>();
         for (final String item : splitStudents) {
             final String[] t = item.split(":");
