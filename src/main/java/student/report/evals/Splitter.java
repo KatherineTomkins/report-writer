@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Splitter {
 
-    public List<String> Split(final String input) {
+    public List<String> split(final String input) {
         final List<String> splitStudents = Arrays.asList(input.split(","));
         return splitStudents;
 
