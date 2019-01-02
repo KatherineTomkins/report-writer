@@ -23,10 +23,10 @@ public class FindStudents {
     }
 
     public List<String> find(final String students) {
-        final List<String> splitStudents = splitter.Split(students);
-        final Map<String, Integer> countedScores = counter.Count(splitStudents);
-        final Map<String, Integer> orderedScores = orderer.Order(countedScores);
-        final List<String> toBeHelped = namer.Name(orderedScores);
+        final List<String> splitStudents = splitter.split(students);
+        final Map<String, Integer> countedScores = counter.count(splitStudents);
+        final Map<String, Integer> orderedScores = orderer.order(countedScores);
+        final List<String> toBeHelped = namer.name(orderedScores);
         return toBeHelped;
     }
 
