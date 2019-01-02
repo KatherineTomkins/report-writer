@@ -13,7 +13,7 @@ public class Namer {
                 names.add(entry.getKey());
             }
         }
-        orderedScores.values().remove(0);
+        orderedScores.entrySet().removeIf(e -> e.getValue() == 0);
         final Map.Entry<String, Integer> lowest = orderedScores.entrySet().iterator().next();
         names.add(lowest.getKey());
         return names;
