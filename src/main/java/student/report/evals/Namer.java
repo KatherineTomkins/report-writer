@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class Namer {
 
-    public List<String> Name(final Map<String, Integer> orderedScores) {
+    public List<String> name(final Map<String, Integer> orderedScores) {
         final List<String> names = new ArrayList<>();
         for (final Map.Entry<String, Integer> entry : orderedScores.entrySet()) {
             if (entry.getValue() == 0) {
