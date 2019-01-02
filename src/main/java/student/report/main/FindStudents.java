@@ -16,7 +16,8 @@ public class FindStudents {
     Namer namer = new Namer();
 
     public static void main(final String[] args) {
-        final String students = "Hello World:NNNN, Student One:YNYY, Test This:0, Student Two:YNNY, Name Yes:YYYY";
+        final String students =
+                "Hello World:NNNY, Student One:YYYY, Test This:0, Student Two:YNNY, Name Yes:YNYY, Student None:NNNN";
         final FindStudents finder = new FindStudents();
         System.out.println(finder.find(students));
     }
